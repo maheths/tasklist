@@ -2,7 +2,10 @@
   "name": "runner",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "dependencies": {    
+    "reactbulma": "^3.0.4",
+
+
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "2.1.5"

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Todos from "./components/Todos";
+import { Box, Title } from 'reactbulma';
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -23,11 +25,23 @@ class App extends Component {
   }
   
   render() {
+    const boxStyle = {
+      display: "flex",
+      background: "#FF3364",
+      flexDirection: "column",
+      justifyContent: "center",
+      width: "500px",
+    margin: "2% auto"
+    }
+    
     return (
       <div className="App">
+      <Box style={boxStyle}>
+      <Title style={{ color: "white", textAlign: "center"}}>Quick Task List </Title>
+      </Box>
       
-      <h1> Quick Task List </h1>
             <Todos todos={ this.state.todos } />
+      
             </div>
       
     );
